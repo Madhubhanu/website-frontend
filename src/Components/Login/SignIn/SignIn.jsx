@@ -52,32 +52,24 @@ const SignInForm = () => {
       <h1 className="welcome">Welcome to GenepowerX</h1>
       <div className="form_log">
         <div>
-          <GoogleLogin
-            onSuccess={(credentialResponse) => {
-              // Decode the id_token to extract user information
-              const decodedToken = jwtDecode(credentialResponse.credential);
+        <GoogleLogin
+  onSuccess={(credentialResponse) => {
+    const decodedToken = jwtDecode(credentialResponse.credential);
+    const email = decodedToken.email;
 
-              // Extract email from decoded token
-              const email = decodedToken.email;
-              email;
+    if (email && (email.endsWith("@genepowerx.com") || email.endsWith("@khdreamlife.com"))) {
+      setCookie("accessToken", credentialResponse.credential);
+      setCookie("email", email);
+      setgottoHome(true);
+    } else {
+      alert("Please use your company email (@genepowerx.com or @khdreamlife.com).");
+    }
+  }}
+  onError={() => {
+    alert("Login Failed. Please try again.");
+  }}
+/>
 
-              if (email) {
-                setCookie("accessToken", credentialResponse.credential); // Expires in 7 days
-                setCookie("email", email); // Expires in 7 days
-                credentialResponse;
-                if (email.endsWith("gmail.com")) {
-                  setgottoHome(true);
-                } else {
-                  ("Email domain is not allowed.");
-                }
-              } else {
-                ("Unable to extract email from credentialResponse");
-              }
-            }}
-            onError={() => {
-              ("Login Failed");
-            }}
-          />
         </div>
       </div>
     </div>
