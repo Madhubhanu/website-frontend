@@ -24,19 +24,21 @@ const icons = {
 
 const Options = {
   Default: [
-    "rsID",
     "Gene Name",
     "Gene Score",
+    "Zygosity",
+    "ClinVar_CLNDN",
+    "Clinical_consequence",
+    "Consequence",
+    "Conseq score",
+    "clin sig",
+    "IMPACT",
     "Lit",
     "CH",
     "POS",
     "ref",
     "alt",
-    "Zygosity",
-    "Consequence",
-    "Conseq score",
-    "clin sig",
-    "IMPACT",
+    "rsID"
   ],
   "Population Frequencies": [
     "AFR_AF",
