@@ -403,6 +403,14 @@ button {
   margin-top: -10px; /* Moves the spinner higher */
 }
 
+/* DataTable container styling */
+.datatable-container {
+  height: 500px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .spinner-new {
   width: 40px;
   height: 40px;
