@@ -458,13 +458,13 @@ const handlePdfUpload = async (event) => {
                           resizableColumns
                           className="doctor-datatable"
                           scrollable
-                          scrollHeight="400px"
+                          scrollHeight="500px"
                           sortMode="multiple"
                           globalFilterFields={selectedColumns}
                           style={{
                             fontSize: "14px",
-                            maxHeight: "1000px",
-                            overflow: "auto",
+                            overflow: "visible",
+                            minHeight: "500px",
                           }}
                         >
                           {selectedColumns.map((columnName, index) => (
