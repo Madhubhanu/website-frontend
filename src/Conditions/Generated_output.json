@@ -287,20 +287,7 @@
         }
       ]
     },
-    {
-      "name": "Renal_stones",
-      "icon": "Icons/RenalStones.png",
-      "subcategories": [
-        {
-          "name": "Renal stones",
-          "subtype": [
-            {
-              "name": "Renal stones"
-            }
-          ]
-        }
-      ]
-    },
+    
     {
       "name": "Gastritis",
       "icon": "Icons/Gast Icon.png",
@@ -363,67 +350,7 @@
         }
       ]
     },
-    {
-      "name": "Headaches",
-      "icon": "Icons/headaches.png",
-      "subcategories": [
-        {
-          "name": "Headaches",
-          "subtype": [
-            {
-              "name": "Migraines and other headaches"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Parkinsons",
-      "icon": "Icons/parkinsons.png",
-      "subcategories": [
-        {
-          "name": "Parkisons Disease",
-          "subtype": [
-            {
-              "name": "Parkisons Disease"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Anemia",
-      "icon": "Icons/Anemia.png",
-      "subcategories": [
-        {
-          "name": "Aplastic, Congenital",
-          "subtype": [
-            {
-              "name": "Aplastic, Congenital"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Pancreatic_Disorders",
-      "icon": "Icons/Liver Icon.png",
-      "subcategories": [
-        {
-          "name": "Pancreatitis",
-          "subtype": [
-            {
-              "name": "Pancreatitis"
-            }
-          ]
-        }
-      ]
-    },
-
-
-
-
-
+    
     {
       "name": "Muscular_health",
       "icon": "Icons/Musco Icon.png",
